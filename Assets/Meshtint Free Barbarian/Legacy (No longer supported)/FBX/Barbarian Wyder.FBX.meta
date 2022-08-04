@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: f2b6f64ec23092a4fbe12d90b4535537
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Barbarian Wyder
+    100004: Hammer
+    100006: Shield
+    100008: w
+    100010: wHead
+    100012: wLArm1
+    100014: wLArm2
+    100016: wLArmCollarbone
+    100018: wLArmFinger1
+    100020: wLArmFinger2
+    100022: wLArmPalm
+    100024: wLArmThumb1
+    100026: wLArmThumb2
+    100028: wLLeg1
+    100030: wLLeg2
+    100032: wLLegAnkle
+    100034: wLLegFoot1
+    100036: wLLegPlatform
+    100038: wMace
+    100040: wNeck
+    100042: wPelvis
+    100044: wRArm1
+    100046: wRArm2
+    100048: wRArmCollarbone
+    100050: wRArmFinger1
+    100052: wRArmFinger2
+    100054: wRArmPalm
+    100056: wRArmThumb1
+    100058: wRArmThumb2
+    100060: wRLeg1
+    100062: wRLeg2
+    100064: wRLegAnkle
+    100066: wRLegFoot1
+    100068: wRLegPlatform
+    100070: wShield
+    100072: wSpine
+    100074: wSpine1
+    100076: wSpine2
+    100078: Rig
+    100080: RigHead
+    100082: RigLArm1
+    100084: RigLArm2
+    100086: RigLArmCollarbone
+    100088: RigLArmFinger1
+    100090: RigLArmFinger2
+    100092: RigLArmPalm
+    100094: RigLArmThumb1
+    100096: RigLArmThumb2
+    100098: RigLLeg1
+    100100: RigLLeg2
+    100102: RigLLegAnkle
+    100104: RigLLegFoot1
+    100106: RigLLegPlatform
+    100108: RigMace
+    100110: RigNeck
+    100112: RigPelvis
+    100114: RigRArm1
+    100116: RigRArm2
+    100118: RigRArmCollarbone
+    100120: RigRArmFinger1
+    100122: RigRArmFinger2
+    100124: RigRArmPalm
+    100126: RigRArmThumb1
+    100128: RigRArmThumb2
+    100130: RigRLeg1
+    100132: RigRLeg2
+    100134: RigRLegAnkle
+    100136: RigRLegFoot1
+    100138: RigRLegPlatform
+    100140: RigShield
+    100142: RigSpine
+    100144: RigSpine1
+    100146: RigSpine2
+    400000: Barbarian Wyder
+    400002: //RootNode
+    400004: Hammer
+    400006: Shield
+    400008: w
+    400010: wHead
+    400012: wLArm1
+    400014: wLArm2
+    400016: wLArmCollarbone
+    400018: wLArmFinger1
+    400020: wLArmFinger2
+    400022: wLArmPalm
+    400024: wLArmThumb1
+    400026: wLArmThumb2
+    400028: wLLeg1
+    400030: wLLeg2
+    400032: wLLegAnkle
+    400034: wLLegFoot1
+    400036: wLLegPlatform
+    400038: wMace
+    400040: wNeck
+    400042: wPelvis
+    400044: wRArm1
+    400046: wRArm2
+    400048: wRArmCollarbone
+    400050: wRArmFinger1
+    400052: wRArmFinger2
+    400054: wRArmPalm
+    400056: wRArmThumb1
+    400058: wRArmThumb2
+    400060: wRLeg1
+    400062: wRLeg2
+    400064: wRLegAnkle
+    400066: wRLegFoot1
+    400068: wRLegPlatform
+    400070: wShield
+    400072: wSpine
+    400074: wSpine1
+    400076: wSpine2
+    400078: Rig
+    400080: RigHead
+    400082: RigLArm1
+    400084: RigLArm2
+    400086: RigLArmCollarbone
+    400088: RigLArmFinger1
+    400090: RigLArmFinger2
+    400092: RigLArmPalm
+    400094: RigLArmThumb1
+    400096: RigLArmThumb2
+    400098: RigLLeg1
+    400100: RigLLeg2
+    400102: RigLLegAnkle
+    400104: RigLLegFoot1
+    400106: RigLLegPlatform
+    400108: RigMace
+    400110: RigNeck
+    400112: RigPelvis
+    400114: RigRArm1
+    400116: RigRArm2
+    400118: RigRArmCollarbone
+    400120: RigRArmFinger1
+    400122: RigRArmFinger2
+    400124: RigRArmPalm
+    400126: RigRArmThumb1
+    400128: RigRArmThumb2
+    400130: RigRLeg1
+    400132: RigRLeg2
+    400134: RigRLegAnkle
+    400136: RigRLegFoot1
+    400138: RigRLegPlatform
+    400140: RigShield
+    400142: RigSpine
+    400144: RigSpine1
+    400146: RigSpine2
+    2300000: Hammer
+    2300002: Shield
+    3300000: Hammer
+    3300002: Shield
+    4300000: Shield
+    4300002: Hammer
+    4300004: Barbarian Wyder
+    9500000: //RootNode
+    13700000: Barbarian Wyder
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
