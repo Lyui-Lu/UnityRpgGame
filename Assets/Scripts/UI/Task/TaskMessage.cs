@@ -34,18 +34,14 @@ public class TaskMessage : MonoBehaviour,IController
 
     private void Awake()
     {
-        this.RegisterEvent<IsProceedTask>(SetTaskState);
+        this.RegisterEvent<IsProceedTask>(SetTaskState).UnRegisterWhenGameObjectDestroyed(this.gameObject);
     }
     private void Start()
     {
         taskBtn.onClick.AddListener(ReceiveTaskBtn);
-        if (!isTaskProceed&&isLevelTo&&model.isComplete)
+        if (isLevelTo && !isTaskProceed)
         {
             taskBtn.interactable = true;
-        }
-        else
-        {
-            taskBtn.interactable = false;
         }
     }
     /// <summary>
@@ -59,6 +55,7 @@ public class TaskMessage : MonoBehaviour,IController
         taskName.text = model.Describe;
         coinNum.text = model.Award.ToString();
         taskLevel.text = model.unlockLevel.ToString();
+        isLevelTo = streamData.isLevelTo;
         if (model.isTask)//如果正在进行任务
         {
             isTaskProceed = true;
@@ -76,6 +73,8 @@ public class TaskMessage : MonoBehaviour,IController
     void SetTaskState(IsProceedTask e)
     {
         isTaskProceed = e.isTaskProceed;
+        Debug.Log(222);
+
         if (isTaskProceed)
         {
             taskBtn.interactable = false;
@@ -120,7 +119,7 @@ public class TaskMessage : MonoBehaviour,IController
         }
         else
         {
-                taskBtn.interactable = true;
+            taskBtn.interactable = true;
         }
     }
     public IArchitecture GetArchitecture()

@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour, IController
 {
+    public ParticleSystem mouseButtonDownEffect;
     /// <summary>
     /// 自动寻路组件
     /// </summary>
@@ -183,6 +184,9 @@ public class PlayerController : MonoBehaviour, IController
                 animator.SetBool(FieldManager.IsAttack, false);
                 if (raycastHit.transform.tag == FieldManager.LandTag)
                 {
+                    mouseButtonDownEffect.transform.position = raycastHit.point;
+                    mouseButtonDownEffect.time = 0;
+                    mouseButtonDownEffect.Play();
                     agent.SetDestination(raycastHit.point);
                     animator.SetBool(FieldManager.IsMove, true);
                     animator.SetBool(FieldManager.IsIdle, false);

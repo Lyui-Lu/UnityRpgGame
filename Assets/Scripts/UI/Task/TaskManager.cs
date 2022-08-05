@@ -292,7 +292,7 @@ public class TaskManagerModel : AbstractModel
         this.SendEvent(new IsProceedTask { isTaskProceed = isTask });
         taskmodel = taskModel;
         this.SendEvent(new SetTaskToDatails { model = taskmodel });
-        taskStoreData[taskModel.unlockLevel] = new TaskMesData (unlockLevel,true,true,false,0,0,0,0,0);
+        taskStoreData[taskModel.unlockLevel] = new TaskMesData (unlockLevel,true,false,true,0,0,0,0,0);
     }
     /// <summary>
     /// 更新当前任务的进度数据
@@ -315,7 +315,7 @@ public class TaskManagerModel : AbstractModel
                 huolimonum = taskmodel.huoLiMoNum - huoLiMoNum,
                 xiangxuncaonum = taskmodel.xiangXunCaoNum - xiangXunCaoNum
             });
-            taskStoreData[unlockLevel] = new TaskMesData(unlockLevel, true,true,false,nearEnemyNum,RemoteEnemyNum,moLimoNum,huoLiMoNum,xiangXunCaoNum);
+            taskStoreData[unlockLevel] = new TaskMesData(unlockLevel, true,false,true,nearEnemyNum,RemoteEnemyNum,moLimoNum,huoLiMoNum,xiangXunCaoNum);
             
             if (taskmodel.nearEnemyNum <= nearEnemyNum &&
            taskmodel.RemoteEnemyNum <= RemoteEnemyNum && //如果达成任务条件
@@ -337,8 +337,9 @@ public class TaskManagerModel : AbstractModel
             model.RemoteEnemyNum, model.moLimoNum, model.huoLiMoNum, model.xiangXunCaoNum);
         taskStoreData[model.unlockLevel] = temp;
         isTask = false;
-        this.SendEvent(new IsProceedTask { isTaskProceed = isTask });
         taskModuleDic[model.unlockLevel].FinishTask();
+        taskModuleDic.Remove(model.unlockLevel);
+        this.SendEvent(new IsProceedTask { isTaskProceed = isTask });
     }
     public void LevelUp(int level)
     {

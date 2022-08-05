@@ -46,7 +46,7 @@ public class MaxPlayerData : Data
 
     public int mp = 80;
 
-    public int exp = 300;
+    public int exp = 30;
     public MaxPlayerData()
     {
     }

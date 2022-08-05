@@ -106,7 +106,6 @@ public class InitHuoLiItemCommand : AbstractCommand
     }
     protected override void OnExecute()
     {
-        Debug.Log(number);
         this.GetModel<HuoLiMoModel>().SetNumber(number);
     }
 }

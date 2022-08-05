@@ -25,6 +25,7 @@ public class LoginManager : MonoBehaviour, IController
     /// </summary>
     void StartGameBtnDown()
     {
+        startGameEnterBtn.interactable = false;
         //如果数据库中存储的名字的话
         if (PlayDataManager.instance.LoadData(FieldManager.Playername) != null)
         {
@@ -41,6 +42,7 @@ public class LoginManager : MonoBehaviour, IController
         //输入不等于空
         if (nameInputField.text != null)
         {
+            startGameEnterBtn.interactable=false;
             LoginData loginData = new LoginData(); //存储
             loginData.name = nameInputField.text;
             PlayDataManager.instance.SaveData(loginData, FieldManager.Playername);

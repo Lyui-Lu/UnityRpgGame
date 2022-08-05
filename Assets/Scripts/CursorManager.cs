@@ -27,7 +27,7 @@ public class CursorManager : MonoBehaviour
             {
                 SetAttack();
             }
-            else if (raycastHit.transform.tag == "PickUpItem")
+            else if (raycastHit.transform.tag == "PickUpItem"||raycastHit.transform.tag == "NPC")
             {
                 SetPickUp();
             }
